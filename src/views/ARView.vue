@@ -1,16 +1,16 @@
 <template>
-  <hello-world />
+  <ActiveRgions />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from '../components/HelloWorld.vue'
+import ActiveRgions from '../components/ActiveRegions.vue'
 
 export default Vue.extend({
-  name: 'HomeView',
+  name: 'ARView',
 
   components: {
-    HelloWorld
+    ActiveRgions
   }
 })
 </script>

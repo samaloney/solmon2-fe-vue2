@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ARView from '../views/ARView.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes: Array<RouteConfig> = [
     component: HomeView
   },
   {
+    path: '/ars',
+    name: 'ars',
+    component: ARView
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
@@ -18,6 +24,7 @@ const routes: Array<RouteConfig> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
+
 ]
 
 const router = new VueRouter({
